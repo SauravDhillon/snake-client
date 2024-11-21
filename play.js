@@ -9,8 +9,8 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Connection is made successfully");
   });
-  conn.on("data", () => {
-    console.log("you ded cuz you idled");
+  conn.on("data", (data) => {
+    console.log(data);
   });
 
   return conn;
