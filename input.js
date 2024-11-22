@@ -11,6 +11,7 @@ const setupInput = function (conn) {
 //it checks for the Ctrl + C key combination and terminates the process if it's detected
 const handleUserInput = function(key){
   if(key === "\u0003"){
+    console.log("Game ended");
     process.exit();
   }
     if(key === "w" || key === "W"){
@@ -21,6 +22,12 @@ const handleUserInput = function(key){
       connection.write("Move: down");
     }else if(key === "d" || key === "D"){
       connection.write("Move: right");
+    }
+    if(key === "1"){
+      connection.write("Say:Howdy");
+    }
+    if(key === "2"){
+      connection.write("Say:Good Game");
     }
   
 };
