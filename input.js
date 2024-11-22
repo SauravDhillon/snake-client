@@ -24,10 +24,10 @@ const handleUserInput = function(key){
       connection.write("Move: right");
     }
     if(key === "1"){
-      connection.write("Say:Howdy");
+      connection.write("Say: Howdy");
     }
     if(key === "2"){
-      connection.write("Say:Good Game");
+      connection.write("Say: Good Game");
     }
   
 };
